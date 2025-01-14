@@ -1,18 +1,19 @@
-## Getting Started
+###### Millionaire City c'est quoi ? #####
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
+##### Architecture de projet #####
 
-The workspace contains two folders by default, where:
+>.vscode                (contient les paramètres du projet)
+    settings.json       
+>bin                    (contient les .class pour la compilation)
+>ressources             (contient les ressources, dont les images)
+    >images
+>src                    (contient le code source, dont les classes et tests)
+    >classes
+    >tests
+    App.java            (fichier main exécutable)
+HELP.md                 (fichier d'aide)
+README.md               (fichier d'explication du projet)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
