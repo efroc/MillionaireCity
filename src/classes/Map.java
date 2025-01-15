@@ -12,6 +12,7 @@ public class Map {
     private String username;
     private int[][] gameGrid;
 
+    /* Getters et setters */
     public String getIdUser() {
         return idUser;
     }
@@ -57,7 +58,8 @@ public class Map {
         this.gameGrid = grid;
     }
 
-    public void affiche() {
+    /* Affiche la grille de jeu dans la console */
+    public void afficheGrille() {
         System.out.println("Map of "+getUsername()+" :");
         for(int i = 0; i < getGameGrid().length; i++) {
             for(int j = 0; j < getGameGrid()[i].length; j++) {
@@ -66,5 +68,17 @@ public class Map {
             System.out.print("| ");
             System.out.println();
         }
+    }
+
+    /* Agrandit la grille de jeu */
+    public void agranditGrille(int width) {
+        int[][] newGrille = new int[getGameGrid().length + width][getGameGrid().length + width];
+        for(int i = 0; i < newGrille.length; i++) {
+            for(int j = 0; j < newGrille[i].length; j++) {
+                if(i < getGameGrid().length && j < getGameGrid().length) newGrille[i][j] = getGameGrid()[i][j];
+                else newGrille[i][j] = 0;
+            }
+        }
+        setGameGrid(newGrille);
     }
 }
