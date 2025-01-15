@@ -1,5 +1,6 @@
 ###### Millionaire City c'est quoi ? #####
 
+Le but du jeu : créer son village à l'aide de ressources et avoir un maximum d'habitants.
 
 ##### Architecture de projet #####
 
